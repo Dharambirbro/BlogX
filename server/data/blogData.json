@@ -1,0 +1,18 @@
+{
+  "areas": [
+    "season",
+    "fashion",
+    "travel",
+    "style",
+    "job",
+    "design"
+  ],
+  "counts": {
+    "season": 8,
+    "fashion": 26,
+    "travel": 2,
+    "style": 10,
+    "job": 2,
+    "design": 2
+  }
+}

@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply text-6xl font-[750];
+  }
+  h2 {
+    @apply text-6xl font-[400];
+  }
+  h3 {
+    @apply text-4xl font-[750];
+  }
+  h4 {
+    @apply text-4xl font-[400];
+  }
+  h5 {
+    @apply text-2xl font-[700];
+  }
+  h6 {
+    @apply text-xl font-[600];
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.bg-piano-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 19 22 / var(--tw-bg-opacity));
+  /* #f3f4f6 */
+  /* #131316 */
+  /* #222227 */
+  /* #252528 */
+
+  /* #f4f8fb */
+  /* text-[hsla(0,0%,100%,.7)] */
+}
+/* primary dark  */
+/* bg-[#0c0a09] */
+
+/* primary light  */
+/* bg-[#f4f8fb] */
+/* bg-[#f3f4f6] */
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1536px;
+  padding-left: 6rem /* 96px */;
+  padding-right: 6rem /* 96px */;
+}
+.animation {
+  animation: scroll-watcher;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {
+    border-bottom: 1px solid rgb(165, 165, 165);
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .wrapper {
+    max-width: 1366px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    /* max-width: 475px; */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@layer components {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  :root {
+    --font-family: "Roboto", sans-serif;
+  }
+  /* p {
+    @apply text-[#303030] dark:text-primary-text-dark;
+  } */
+  .h1-bold {
+    @apply text-6xl font-[750] max-lg:text-5xl max-md:text-4xl max-sm:text-3xl tracking-tight leading-snug; /*imp*/
+    font-family: var(--font-family);
+  }
+  .h1-semibold {
+    @apply text-6xl font-medium max-lg:text-5xl max-md:text-4xl max-sm:text-3xl tracking-tight leading-tight;
+  }
+  .h1 {
+    @apply text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-thin max-[460px]:text-2xl tracking-tight leading-tight; /*imp*/
+  }
+  /* ---------------------------------------------------------------------- */
+  .h2-bold {
+    @apply max-md:text-4xl max-sm:text-2xl max-[460px]:text-xl font-[750] tracking-tight leading-tight; /*imp*/
+  }
+  .h2-semibold {
+    @apply text-5xl font-medium max-lg:text-4xl max-md:text-3xl max-sm:text-2xl tracking-tight leading-tight; /*imp*/
+  }
+  .h2 {
+    @apply text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl tracking-tight leading-tight;
+  }
+  /* ---------------------------------------------------------------------- */
+
+  .h3-bold {
+    @apply text-4xl font-bold max-lg:text-3xl max-md:text-2xl max-sm:text-xl tracking-tight leading-tight;
+  }
+  .h3-semibold {
+    @apply text-4xl font-normal max-lg:text-3xl max-md:text-2xl max-sm:text-xl tracking-tight leading-tight;
+  }
+  .h3 {
+    @apply text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl tracking-tight leading-tight;
+  }
+  /* ---------------------------------------------------------------------- */
+
+  .h4-bold {
+    @apply text-3xl font-[750] max-lg:text-2xl max-md:text-xl max-sm:text-lg tracking-tight leading-tight; /*imp*/
+  }
+  .h4-semibold {
+    @apply text-3xl font-medium max-lg:text-2xl max-md:text-xl max-sm:text-lg tracking-tight leading-[1.1]; /*imp*/
+  }
+  .h4 {
+    @apply text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg tracking-tight leading-tight;
+  }
+  /* ---------------------------------------------------------------------- */
+  .h5-bold {
+    @apply text-xl font-[550] max-lg:text-xl max-md:text-lg max-sm:text-base tracking-tight leading-tight; /*imp*/
+  }
+  .h5-semibold {
+    @apply text-2xl font-[500] max-md:font-medium max-lg:text-xl max-md:text-lg max-sm:text-lg tracking-tight leading-tight;
+  }
+  .h5 {
+    @apply text-xl  max-sm:text-lg;
+  }
+  /* ---------------------------------------------------------------------- */
+
+  .h6-bold {
+    @apply text-lg font-semibold max-lg:text-lg max-md:text-base max-[460px]:text-sm tracking-tight leading-tight;
+  }
+  .h6-semibold {
+    @apply text-lg font-medium max-lg:text-lg max-md:text-base max-[460px]:text-sm tracking-tight leading-tight; /*imp*/
+  }
+  .h6 {
+    @apply text-base font-light max-md:text-sm tracking-tight leading-tight;
+    font-family: var(--font-family);
+  }
+  /* ---------------------------------------------------------------------- */
+  .h7-semibold {
+    @apply text-base font-medium max-md:text-xs max-[460px]:text-xs tracking-tight leading-tight; /*imp*/
+  }
+  .h7 {
+    @apply text-sm font-medium max-md:text-xs max-[460px]:text-xs tracking-tight leading-tight; /*imp*/
+  }
+}
+
+/* Set initial scrollbar size and hide it by default */
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+
+  visibility: hidden;
+}
+
+/* Style the thumb (handle) of the scrollbar */
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #555;
+
+  border: 1px solid black;
+}
+
+/* Change thumb color on hover */
+.scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+
+/* Style the track (background) of the scrollbar */
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Show the scrollbar when the container is hovered */
+.scrollbar:hover::-webkit-scrollbar {
+  display: block;
+}
